@@ -1,0 +1,246 @@
+<!--index debe ser el nombre del primer archivo del proyecto es el que por defecto el servidor consultara al cargar la pag -->
+<!DOCTYPE html>
+<html lang = "es"> <!--La Etiqueta lang dice el lenguaje en el que esta la pagina-->
+    <head>
+        <meta charset = "UTF-8" /> <!--charser = utf-8 me trae los caracteres especiales-->
+        <meta name = "desciption" content="Esta pagina es la lista de mercado" /> <!--importante para SEO le dice al navegador de que trata la pagina-->
+        <meta name="robots" content="index,follow"/>
+        <title>Go Kyo</title>
+        <meta name = "viewport" content="width=device-widht, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <!--link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./tablet.css" media="screen and (min-width:650px)"/>
+        <link rel="stylesheet" href="./desktop.css" media="screen and (min-width:900px)"/!-->
+    </head>
+    <style>
+        :root{
+    --color-amarillo:yellow;
+    --color-naranja:orange;
+    --color-verde:darkgreen;
+    --color-azul:blue;
+    --color-marron:#8d4925;
+}
+*{
+    padding: 1px;
+    margin: 0px;
+    box-sizing: border-box; /*Re calcula la dimesion para ajustarse a la plantalla*/
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    border: 0.3rem solid black;
+    align-items: center;
+    justify-content: center;
+    width: 98vw;
+}
+.titulo{
+    width:100%;
+    border: 0.3rem solid black;
+    font-size: 2.4rem;
+    text-align: center;
+}
+header .titulo{
+    background-color:rgb(218, 19, 19);
+}
+header{
+    min-height: 20vh;
+    width: 100vw;
+
+}
+picture{
+    height: 100%;
+    width:100%;
+    border: 0.3rem solid black;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+img{
+    
+    max-height: 110px;
+    margin: auto;
+    
+}
+main .titulo{
+    background-color:darkgray;
+}
+p{
+    font-size: 1.6rem;
+    font-family: sans-serif;
+}
+.grupo{
+    width:300px;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    margin-top: 0.3rem;
+    border: 5px solid;
+    list-style: none;
+    border-radius: 1rem;
+}
+
+
+.c1, .c2, .c3, .c4, .c5{
+    max-width:320px;
+    min-width: 150px;
+    height: auto;
+    font-size: 1.8rem;
+    text-align: center;
+
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    margin-top: 1.5rem;
+    border: 5px solid;
+    list-style: none;
+    border-radius: 1rem;
+}
+.c1{
+    border-color: var(--color-amarillo);
+
+}
+.c2{
+    border-color: var(--color-naranja);
+
+}
+.c3{
+    border-color: var(--color-verde);
+
+}
+.c4{
+    border-color: var(--color-azul);
+
+}
+.c5{
+    border-color: var(--color-marron);
+
+}
+#amarillo{
+    background-color:var(--color-amarillo);
+    border-color:var(--color-amarillo);
+}
+#naranja{
+    background-color:var(--color-naranja);
+    border-color:var(--color-naranja);
+}
+#verde{
+    background-color: var(--color-verde);
+    border-color: var(--color-verde);
+}
+#azul{
+    background-color: var(--color-azul);
+    border-color: var(--color-azul);
+}
+#marron{
+    background-color: var(--color-marron);
+    border-color: var(--color-marron);
+}
+
+footer{
+    height: 10rem;
+    display: inline-block;
+}
+h5{
+    font-size: 1.6rem;
+    margin: 1rem;
+    font-weight: bolder;
+    display: inline-block;
+}
+    </style>
+    <body>
+        <header class = "container">
+            
+            <picture>
+                <img src="https://img.icons8.com/ios-glyphs/90/000000/judo.png"/>
+                <img src="https://img.icons8.com/external-tulpahn-outline-color-tulpahn/50/000000/external-crab-summer-tulpahn-outline-color-tulpahn.png"/ style="height: 90px;">
+            </picture>
+            
+            <h2 class="titulo" >Club de Judo Heikegani</h2>
+
+        </header>
+        <main class="container">
+            
+            
+            <h1 class="titulo">Go Kyo no waza</h1>
+            <p>El Gokyo no Waza es el plan de estudios estándar de las técnicas de lanzamiento originado en 1895 en el Kodokan (Tokio, Japón). Usa esta guía para repasar las técnicas de tu ascenso, dando click en los nombres de cada técnica.  </p>
+                
+                <ol class="c1">
+                    <li class="grupo" id="amarillo"><strong>Dai-ikkyo (grupo 1)</strong></li>
+                    <li><a href="https://www.youtube.com/watch?v=txGhXluJjbk">De-ashi-harai</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=JPJx9-oAVns">Hiza-guruma</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=699i--pvYmE">Sasae-tsurikomi-ashi</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=bPKwtB4lyOQ">Uki-goshi</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=c-A_nP7mKAc&t=2s">O-soto-gari</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=yhu1mfy2vJ4"> O-goshi</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=0itJFhV9pDQ">O-uchi-gari</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=zIq0xI0ogxk">Seoi-nage</a></li>
+                </ol> <!--Lista ordenada numerados de 1 a n-->
+                
+                <ol class="c2">
+                    <li class="grupo" id="naranja"><strong>Dai-nikyo (grupo 2)</strong></li>
+                    <li><a href="https://www.youtube.com/watch?v=jeQ541ScLB4">Ko-soto-gari</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=3Jb3tZvr9Ng">Ko-uchi-gari</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=SU7Id6uVJ44">Koshi-guruma</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=McfzA0yRVt4">Tsurikomi-goshi</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=nw1ZdRjrdRI&t=2s">Okuri-ashi-harai</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=4x6S3Q-Ktv8">Tai-Otoshi</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=qTo8HlAAkOo">Harai-goshi</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=HT-VHrZThq0">Uchi-mata</a></li>
+                </ol> <!--Lista ordenada numerados de 1 a n-->
+                
+                <ol class="c3">
+                    <li class="grupo" id="verde"><strong>Dai-sankyo (grupo 3)</strong></li>
+                    <li><a href="https://www.youtube.com/watch?v=8b6kY4s4zH4&t=16s">Ko-soto-gake</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=51Htlp7xEvE">Tsuri-goshi</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=MnNG67pF_a0">Yoko-otoshi</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=ROeayhvom9U">Ashi-guruma</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=M9_7De6A1kk">Hane-goshi</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=gGPXvWL8VbE">Harai-tsurikomi-ashi</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=880WbHvHv6A">Tomoe-nage</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=cnHRhSy8yi4">Kata-guruma</a></li>
+                </ol> <!--Lista ordenada numerados de 1 a n-->
+                
+                <ol class="c4">
+                    <li class="grupo" id="azul"><strong>Dai-yonkyo (grupo 4)</strong></li>
+                    <li><a href="https://www.youtube.com/watch?v=5VhduA5xkbA">Sumi-gaeshi</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=3b9Me3Fohpk">Tani-otoshi</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=6CRBGLGz9j8">Hane-makikomi</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=vU6aJ2kFxoI&t=9s">Sukui-nage</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=4pQd_bEnlf0">Utsuri-goshi</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=SnZciTAY9vc">O-guruma</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=bWG9O1BVKtQ">Soto-makikomi</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=6H5tmncOY4Q">Kata-guruma</a></li>
+                </ol> <!--Lista ordenada numerados de 1 a n-->
+                
+                <ol class="c5">
+                    <li class="grupo" id="marron"><strong>Dai-gokyo (grupo 5)</strong></li>
+                    <li><a href="https://www.youtube.com/watch?v=92KbCm6pQeI">O-soto-guruma</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=wKuGUtAm7V8">Uki-waza</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=bp1tscHlePI">Yoko-wakare</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=MehP6I5cY2c">Yoko-guruma</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=ORIYstuxYT8">Ushiro-goshi</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Fgi9b8DJ5sQ">Ura-nage</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=lLU9wv52ni0">Sumi-otoshi</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=tP1Sj1uDfSo">Yoko-gake</a></li>
+                </ol> <!--Lista ordenada numerados de 1 a n-->
+                
+            </ul> <!--Lista desordnada-->
+            
+        </main>
+        <footer>
+            <h5>Jita Kyoei!!</h5>
+            <h5><a href="https://www.instagram.com/heikeganijudo/?hl=es-la">Conoce el club</a></h5>
+            
+        </footer>
+        <div></div>    <!--Etiqueta comodin pero no es bunea practica usarla mucho, debe usarse hatml semantico-->
+        
+        
+    </body>
+</html>
