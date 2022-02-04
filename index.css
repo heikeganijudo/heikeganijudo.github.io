@@ -73,10 +73,14 @@ transition: 0.5s;
     justify-content:space-between;
     flex-wrap: wrap;
 }
+.content-container figure{
+    height: 200px;
+    width: 20%;
+    justify-items: center;
+}
 .content-container img{
     height: 200px;
     width: auto;
-    margin-right: 10px;
 }
 
 .text-container{
@@ -104,6 +108,7 @@ transition: 0.5s;
 }
 
 .footer a img{
-   height: 70px;
-   width: auto;
+    height: 60px;
+    width: auto;
+    background-size: cover;
 }

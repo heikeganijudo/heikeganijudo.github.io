@@ -58,6 +58,11 @@ p{
     font-size: 1.6rem;
     font-family: sans-serif;
 }
+
+.waza{
+    cursor: pointer;
+    font-size: 1.8rem;
+}
 .grupo{
     width:300px;
     font-size: 1.8rem;
@@ -135,4 +140,21 @@ h5{
     margin: 1rem;
     font-weight: bolder;
     display: inline-block;
+}
+
+#video-player__container{
+    display:none;
+    align-content: center;
+}
+
+#video-player__container button{
+    width: 150px;
+    height: 50px;
+    border-radius: 1rem;
+}
+
+#video-player{
+    width:  90vw;
+    height: 60vw;
+    margin: 10px;
 }

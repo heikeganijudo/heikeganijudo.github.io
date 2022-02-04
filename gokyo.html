@@ -25,18 +25,23 @@
         
         
         <h1 class="titulo">Go Kyo no waza</h1>
-        <p>El Gokyo no Waza es el plan de estudios estándar de las técnicas de lanzamiento originado en 1895 en el Kodokan (Tokio, Japón). Usa esta guía para repasar las técnicas de tu ascenso, dando click en los nombres de cada técnica.  </p>
+        <p>El Gokyo no Waza es el plan de estudios estándar de las técnicas de lanzamiento originado en 1895 en el Kodokan (Tokio, Japón). Usa esta guía para repasar las técnicas de tu ascenso, dando click en los nombres de cada técnica. Puedes dar click sobre cada tecnica para ver un video </p>
             
+        <div id="video-player__container">
+            <iframe id="video-player"  src="" allowfullscreen></iframe>
+            <button onclick="closeVideo()">Cerrar</button>
+        </div>
+        
             <ol class="c1">
                 <li class="grupo" id="amarillo"><strong>Dai-ikkyo (grupo 1)</strong></li>
-                <li><a href="https://www.youtube.com/watch?v=txGhXluJjbk">De-ashi-harai</a></li>
-                <li><a href="https://www.youtube.com/watch?v=JPJx9-oAVns">Hiza-guruma</a></li>
-                <li><a href="https://www.youtube.com/watch?v=699i--pvYmE">Sasae-tsurikomi-ashi</a></li>
-                <li><a href="https://www.youtube.com/watch?v=bPKwtB4lyOQ">Uki-goshi</a></li>
-                <li><a href="https://www.youtube.com/watch?v=c-A_nP7mKAc&t=2s">O-soto-gari</a></li>
-                <li><a href="https://www.youtube.com/watch?v=yhu1mfy2vJ4"> O-goshi</a></li>
-                <li><a href="https://www.youtube.com/watch?v=0itJFhV9pDQ">O-uchi-gari</a></li>
-                <li><a href="https://www.youtube.com/watch?v=zIq0xI0ogxk">Seoi-nage</a></li>
+                <li><p class="waza" onclick='playVideo("https:/www.youtube.com/embed/txGhXluJjbk")'>De-ashi-harai</p></li>
+                <li><p class="waza" onclick='playVideo("https:/www.youtube.com/embed/JPJx9-oAVns")'>Hiza-guruma</p></li>
+                <li><p class="waza" onclick='playVideo("https:/www.youtube.com/embed/699i--pvYmE")'>Sasae-tsurikomi-ashi</p></li>
+                <li><p class="waza" onclick='playVideo("https:/www.youtube.com/embed/bPKwtB4lyOQ")'>Uki-goshi</p></li>
+                <li><p class="waza" onclick='playVideo("https:/www.youtube.com/embed/c-A_nP7mKAc&t=2s")'>O-soto-gari</p></li>
+                <li><p class="waza" onclick='playVideo("https:/www.youtube.com/embed/yhu1mfy2vJ4")'>O-goshi</p></li>
+                <li><p class="waza" onclick='playVideo("https:/www.youtube.com/embed/0itJFhV9pDQ")'>O-uchi-gari</p></li>
+                <li><p class="waza" onclick='playVideo("https:/www.youtube.com/embed/zIq0xI0ogxk")'>Seoi-nage</p></li>
             </ol> <!--Lista ordenada numerados de 1 a n-->
             
             <ol class="c2">
@@ -91,9 +96,23 @@
     </main>
     <footer>
         <h5>Jita Kyoei!!</h5>
-        <a href="./evento.html">Probando</a>
-        <h5><a href="https://www.instagram.com/heikeganijudo/?hl=es-la">Conoce el club</a></h5>
+        <h5><a onclick='playVideo("pony")' href="https://www.instagram.com/heikeganijudo/?hl=es-la" target="blank">Conoce el club</a></h5>
         
     </footer>
+    <script>
+        function playVideo(enlace){
+            //alert(enlace);
+            var container = document.getElementById("video-player__container");
+            document.getElementById("video-player").src =  enlace;
+            container.style.display =  'block';
+        }
+
+        function closeVideo(){
+            var container = document.getElementById("video-player__container");
+            document.getElementById("video-player").src =  "";
+            container.style.display =  'none';
+        }
+    </script>
 </body>
+
 </html>
