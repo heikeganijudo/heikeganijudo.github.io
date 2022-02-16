@@ -7,7 +7,7 @@ body{
 }
 .header 
 {
-    width: 100%;
+    width: 100vw;
     height: 10%;
     min-height: 0px;
     background-color: white;
@@ -27,7 +27,11 @@ display: flex;
 justify-content: space-between;
 }
 
+.nav p{
 
+    display: none;
+
+}
 .nav-link {
 color: black;
 text-decoration: none;
@@ -109,6 +113,35 @@ transition: 0.5s;
 
 .footer a img{
     height: 60px;
-    width: auto;
-    background-size: cover;
+    width: 60px;
+    background-size:cover;
+}
+@media only screen and (max-width: 500px){
+    .nav{
+        position: relative;
+        display: inline-block;
+    }
+    .nav p{
+        font-size: 18px;
+        padding: 8px 12px;
+        border-radius: 3px;
+        display: block;
+        margin-top: 50%;
+        margin-right: 30px;
+        background-color: orange;
+        transition: 0.5s;
+        text-transform: uppercase;
+    }
+    .nav-menu {
+        display: none;
+        position: absolute;
+        right: -10px;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .nav:hover .nav-menu{
+        display: block;
+    }
 }
