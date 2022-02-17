@@ -21,7 +21,8 @@ html{
     border: 0.3rem solid black;
     align-items: center;
     justify-content: center;
-    width: 98vw;
+    width: 100vw;
+    min-height: 80vh;
 }
 .titulo{
     width:100%;
@@ -29,14 +30,7 @@ html{
     font-size: 2.4rem;
     text-align: center;
 }
-header .titulo{
-    background-color:rgb(218, 19, 19);
-}
-header{
-    min-height: 20vh;
-    width: 100vw;
 
-}
 picture{
     height: 100%;
     width:100%;
@@ -55,8 +49,9 @@ main .titulo{
     background-color:darkgray;
 }
 p{
-    font-size: 1.6rem;
+    font-size: 2.0rem;
     font-family: sans-serif;
+    text-align: center;
 }
 
 .waza{
@@ -131,9 +126,28 @@ p{
     border-color: var(--color-marron);
 }
 
-footer{
-    height: 10rem;
-    display: inline-block;
+.footer{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    min-height: 90px;
+    height: 10%;
+    width: 100%;
+    padding: 5px;
+    background-color: #1e63b1;;
+}
+
+.footer a{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+}
+
+.footer a img{
+    height: 60px;
+    width: 60px;
+    background-size:cover;
 }
 h5{
     font-size: 1.6rem;
@@ -145,6 +159,7 @@ h5{
 #video-player__container{
     display:none;
     align-content: center;
+    justify-content: center;
 }
 
 #video-player__container button{

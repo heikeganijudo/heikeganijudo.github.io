@@ -8,24 +8,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./index.css">
     <title>Heikegani</title>
 </head>
 <body>
-    <header class = "container">
+    <header class = "header">
             
-        <picture>
-            <img src="https://i.ibb.co/pxWqzGZ/logo-copia.png" alt="logo-copia">
-            <img src="https://img.icons8.com/external-tulpahn-outline-color-tulpahn/50/000000/external-crab-summer-tulpahn-outline-color-tulpahn.png"/ style="height: 90px;">
-        </picture>
-        
-        <h2 class="titulo" >Club de Judo Heikegani</h2>
-
+        <img src="https://i.ibb.co/pxWqzGZ/logo-copia.png" alt="logo-copia" class="header__img">
+        <nav class="nav">
+            <p>Menu</p>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="./index.html" class="nav-menu-link nav-link">Home</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="/" class="nav-menu-link nav-link">Equipo</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="/" class="nav-menu-link nav-link">Historia</a>
+                </li>
+                
+            </ul>
+        </nav>
     </header>
     <main class="container">
         
         
         <h1 class="titulo">Go Kyo no waza</h1>
-        <p>El Gokyo no Waza es el plan de estudios estándar de las técnicas de lanzamiento originado en 1895 en el Kodokan (Tokio, Japón). Usa esta guía para repasar las técnicas de tu ascenso, dando click en los nombres de cada técnica. Puedes dar click sobre cada tecnica para ver un video </p>
+        <p>El Gokyo no Waza es el plan de estudios estándar de las técnicas de lanzamiento originado en 1895 en el Kodokan (Tokio, Japón). Usa esta guía para repasar las técnicas de tu ascenso, dando click en los nombres de cada técnica. Al dar click sobre cada tecnica para ver se video se cagará un reproductor</p>
             
         <div id="video-player__container">
             <iframe id="video-player"  src="" allowfullscreen></iframe>
@@ -93,9 +103,10 @@
             
         </ul> <!--Lista desordnada-->
     </main>
-    <footer>
-        <h5>Jita Kyoei!!</h5>
-        <h5><a  href="./evento.html" target="blank">Conoce el club</a></h5>
+    <footer class="footer">
+            
+        <a href="https://www.instagram.com/heikeganijudo/?hl=es-la" target="_blank"><img src="https://img.icons8.com/material-outlined/96/ffffff/instagram-new--v1.png" />Conoce el club</a>
+        <a href="https://icons8.com/icon/85154/instagram" target="_blank">Instagram icon by Icons8</a>
         
     </footer>
     <script>
