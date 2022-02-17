@@ -4,6 +4,7 @@ body{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    font-family: sans-serif;
 }
 .header 
 {
@@ -57,7 +58,7 @@ border-radius: 3px;
 }
 
 .nav-menu-link:hover,
-.nav-menu-link_active {
+.nav-menu-link_active{
 background-color: orange;
 transition: 0.5s;
 }
@@ -85,6 +86,7 @@ transition: 0.5s;
     color: #f1f1f1;
 }
 
+
 .content-container img{
     height: 300px;
     width: auto;
@@ -100,6 +102,12 @@ transition: 0.5s;
     text-align: justify;
     font-size: 18px;
 }
+
+.text-container a{
+    color: #1e63b1;
+    font-size: 18px;
+}
+
 .footer{
     display: flex;
     align-items: baseline;
@@ -123,6 +131,16 @@ transition: 0.5s;
     width: 60px;
     background-size:cover;
 }
+
+a{
+    padding: 8px 12px;
+    border-radius: 3px;
+    }
+    
+a:hover{
+    background-color: orange;
+    transition: 0.5s;
+    }
 @media only screen and (max-width: 600px){
     .content-container img{
         display: none;

@@ -58,6 +58,11 @@ p{
     cursor: pointer;
     font-size: 1.8rem;
 }
+    
+.waza:hover{
+    background-color: orange;
+    transition: 0.5s;
+    }
 .grupo{
     width:300px;
     font-size: 1.8rem;
