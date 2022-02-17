@@ -112,8 +112,10 @@
     <script>
         function playVideo(enlace){
             //alert(enlace);
+            var player = document.getElementById("video-player")
             var container = document.getElementById("video-player__container");
-            document.getElementById("video-player").src = enlace;
+            player.src = enlace;
+            //player.playVideo();
             container.style.display =  'block';
         }
 

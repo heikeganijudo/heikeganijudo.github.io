@@ -15,10 +15,12 @@ html{
     font-family: 'Open Sans', sans-serif;
 }
 
+main p{
+    text-align: justify;
+}
 .container{
     display: flex;
     flex-wrap: wrap;
-    border: 0.3rem solid black;
     align-items: center;
     justify-content: center;
     width: 100vw;
@@ -26,7 +28,6 @@ html{
 }
 .titulo{
     width:100%;
-    border: 0.3rem solid black;
     font-size: 2.4rem;
     text-align: center;
 }
@@ -45,9 +46,7 @@ img{
     margin: auto;
     
 }
-main .titulo{
-    background-color:darkgray;
-}
+
 p{
     font-size: 2.0rem;
     font-family: sans-serif;
@@ -57,6 +56,7 @@ p{
 .waza{
     cursor: pointer;
     font-size: 1.8rem;
+    text-align: center;
 }
     
 .waza:hover{
@@ -74,6 +74,7 @@ p{
     list-style: none;
     border-radius: 1rem;
 }
+
 
 
 .c1, .c2, .c3, .c4, .c5{
