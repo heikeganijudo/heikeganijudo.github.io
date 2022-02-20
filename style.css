@@ -91,6 +91,21 @@ p{
     list-style: none;
     border-radius: 1rem;
 }
+
+.kata{
+    max-width:320px;
+    min-width: 250px;
+    height: 280px;
+    font-size: 1.8rem;
+    text-align: center;
+
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    margin-top: 1.5rem;
+    border: 5px solid;
+    list-style: none;
+    border-radius: 1rem;
+}
 .c1{
     border-color: var(--color-amarillo);
 

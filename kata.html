@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Heikegani</title>
+</head>
+<body>
+    <header class = "header">
+            
+        <img src="https://i.ibb.co/pxWqzGZ/logo-copia.png" alt="logo-copia" class="header__img">
+        <nav class="nav">
+            <p>Menu</p>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="./index.html" class="nav-menu-link nav-link">Home</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="./gokyo.html" class="nav-menu-link nav-link">Go Kyo</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="/" class="nav-menu-link nav-link">Equipo</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="/" class="nav-menu-link nav-link">Historia</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        
+        
+        <h1 class="titulo">Go Kyo no waza</h1>
+        <p>El Gokyo no Waza es el plan de estudios estándar de las técnicas de lanzamiento originado en 1895 en el Kodokan (Tokio, Japón). Usa esta guía para repasar las técnicas de tu ascenso, dando click en los nombres de cada técnica. Al dar click sobre cada tecnica para ver se video se cagará un reproductor</p>
+            
+        <div id="video-player__container">
+            <iframe id="video-player"  src="" allowfullscreen></iframe>
+            <button onclick="closeVideo()">Cerrar</button>
+        </div>
+        
+            <div class="kata">
+                <img src="https://i.ibb.co/pxWqzGZ/logo-copia.png" alt="logo-copia" class="header__img">
+                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/zIq0xI0ogxk")'>Nage-no-Kata</p>
+            </div> <!--Lista ordenada numerados de 1 a n-->
+            
+            <div class="kata">
+                <img src="https://i.ibb.co/pxWqzGZ/logo-copia.png" alt="logo-copia" class="header__img">
+                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/HT-VHrZThq0")'>Katame-no-Kata</p>
+            </div> <!--Lista ordenada numerados de 1 a n-->
+            
+            <div class="kata">
+                <img src="https://i.ibb.co/pxWqzGZ/logo-copia.png" alt="logo-copia" class="header__img">
+                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/cnHRhSy8yi4")'>Kime-no-Kata</p>
+            </div> <!--Lista ordenada numerados de 1 a n-->
+            
+            <div class="kata">
+                <img src="https://i.ibb.co/pxWqzGZ/logo-copia.png" alt="logo-copia" class="header__img">
+                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/6H5tmncOY4Q")'>Ju-no-Kata</p>
+            </div> <!--Lista ordenada numerados de 1 a n-->
+            
+            <div class="kata">
+                <img src="https://i.ibb.co/pxWqzGZ/logo-copia.png" alt="logo-copia" class="header__img">
+                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/tP1Sj1uDfSo")'>Kodokan Goshin-jutsu</p>
+            </div> <!-- <Lista ordenada numerados de 1 a n> -->
+
+            <div class="kata">
+                <img src="https://i.ibb.co/pxWqzGZ/logo-copia.png" alt="logo-copia" class="header__img">
+                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/tP1Sj1uDfSo")'>Itsusu-no-Kata</p>
+            </div>
+
+            <div class="kata">
+                <img src="https://i.ibb.co/pxWqzGZ/logo-copia.png" alt="logo-copia" class="header__img">
+                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/tP1Sj1uDfSo")'>Koshiki-no-Kata</p>
+            </div>
+
+            <div class="kata">
+                <img src="https://i.ibb.co/pxWqzGZ/logo-copia.png" alt="logo-copia" class="header__img">
+                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/tP1Sj1uDfSo")'>Kodomo-no-Kata</p>
+            </div>
+
+            <div class="kata">
+                <img src="https://i.ibb.co/pxWqzGZ/logo-copia.png" alt="logo-copia" class="header__img">
+                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/tP1Sj1uDfSo")'>Seiroku-Zenyo-Kokumin-Taiiku</p>
+            </div>
+
+
+    </main>
+    <footer class="footer">
+            
+        <a href="https://www.instagram.com/heikeganijudo/?hl=es-la" target="_blank"><img src="https://img.icons8.com/material-outlined/96/ffffff/instagram-new--v1.png" />Conoce el club</a>
+        <a href="https://icons8.com/icon/85154/instagram" target="_blank">Instagram icon by Icons8</a>
+        
+    </footer>
+    <script>
+        function playVideo(enlace){
+            //alert(enlace);
+            var player = document.getElementById("video-player")
+            var container = document.getElementById("video-player__container");
+            player.src = enlace;
+            //player.playVideo();
+            container.style.display =  'block';
+        }
+
+        function closeVideo(){
+            var container = document.getElementById("video-player__container");
+            document.getElementById("video-player").src =  "";
+            container.style.display =  'none';
+        }
+    </script>
+</body>
+
+</html>
