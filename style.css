@@ -40,12 +40,6 @@ picture{
     justify-content: space-between;
     text-align: center;
 }
-img{
-    
-    max-height: 110px;
-    margin: auto;
-    
-}
 
 p{
     font-size: 2.0rem;
@@ -93,18 +87,27 @@ p{
 }
 
 .kata{
-    max-width:320px;
-    min-width: 250px;
+    width:260px;
     height: 280px;
     font-size: 1.8rem;
     text-align: center;
-
     margin-left: 0.3rem;
     margin-right: 0.3rem;
     margin-top: 1.5rem;
     border: 5px solid;
-    list-style: none;
     border-radius: 1rem;
+}
+
+.kata .kata__img{
+    margin-top: 5px;
+    background-color: #1e63b1;
+    height: 200px;  
+    width: 180px;
+    object-fit: cover;
+}
+
+.kata p:nth-child(3){
+    font-size: 1.3rem;
 }
 .c1{
     border-color: var(--color-amarillo);
