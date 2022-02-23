@@ -98,13 +98,15 @@ p{
     border-radius: 1rem;
 }
 
-.kata .kata__img{
+.kata__img{
     margin-top: 5px;
     background-color: #1e63b1;
     height: 200px;  
     width: 180px;
+    max-width: 250px;
     object-fit: cover;
 }
+
 
 .kata p:nth-child(3){
     font-size: 1.3rem;

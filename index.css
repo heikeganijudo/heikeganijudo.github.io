@@ -81,9 +81,13 @@ transition: 0.5s;
     display:flex;
 }
 
-.main .content-container:first-child {
+.main .content-container:nth-child(odd) {
     background-color: #1e63b1;
     color: #f1f1f1;
+}
+
+.main .content-container:nth-child(even) {
+    border: 1px solid black;
 }
 
 
