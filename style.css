@@ -61,6 +61,7 @@ p {
   border: 1px solid #007bff; /* Border color */
   border-radius: 5px; /* Rounded corners */
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  width: 200px;
 }
 
 .waza:hover {
@@ -68,8 +69,15 @@ p {
   transition: 0.5s;
   border-color: #0056b3; /* Darker border on hover */
 }
+
+.waza-container {
+  display: flex;
+  flex-flow: wrap row;
+}
+
 .grupo {
-  width: 300px;
+  width: 280px;
+  max-width: 90vh;
   font-size: 1.8rem;
   text-align: center;
   margin-left: 0.3rem;
@@ -85,18 +93,20 @@ p {
 .c3,
 .c4,
 .c5 {
-  max-width: 320px;
+  width: 90vw;
   min-width: 150px;
-  height: 280px;
   font-size: 1.8rem;
   text-align: center;
 
   margin-left: 0.3rem;
   margin-right: 0.3rem;
   margin-top: 1.5rem;
-  border: 5px solid;
+  border-top: 5px solid;
   list-style: none;
   border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .kata {
@@ -202,7 +212,19 @@ h5 {
 }
 
 #video-player {
-  width: 90vw;
-  height: 60vw;
+  width: 65vw;
+  height: 35vw;
   margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .waza {
+    width: 280px;
+  }
+
+  #video-player {
+    width: 90vw;
+    height: 80vw;
+    margin: 10px;
+  }
 }
