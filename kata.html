@@ -1,179 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Kata</title>
-</head>
-<body>
-    <header class = "header">
-            
-        <img src="https://i.ibb.co/pxWqzGZ/logo-copia.png" alt="logo-copia" class="header__img">
-        <nav class="nav">
-            <p>Menu</p>
-            <ul class="nav-menu">
-                <li class="nav-menu-item">
-                    <a href="./index.html" class="nav-menu-link nav-link">Home</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="./gokyo.html" class="nav-menu-link nav-link">Go Kyo</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="./team.html" class="nav-menu-link nav-link">Equipo</a>
-                </li>
-                <li class="nav-menu-item">
-                    <a href="./history.html" class="nav-menu-link nav-link">Historia</a>
-                </li>
-                
-            </ul>
-        </nav>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./assets/logo-negro.png" alt="logo-copia" class="header__img" />
+      <nav class="nav">
+        <p>Menu</p>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="./index.html" class="nav-menu-link nav-link">Home</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./gokyo.html" class="nav-menu-link nav-link">Go Kyo</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./team.html" class="nav-menu-link nav-link">Equipo</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="./history.html" class="nav-menu-link nav-link">Historia</a>
+          </li>
+
+          <li class="nav-menu-item">
+            <a href="./katamewaza.html" class="nav-menu-link nav-link"
+              >Katame-waza</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="container">
-        
-        
-        <h1 class="titulo">Kata</h1>
-        <p class="descripcion">Hay dos formas principales de practicar Judo: Kata y Randori. Kata, que literalmente significa "forma", se practica siguiendo un sistema formal de ejercicio preestablecido, mientras que Randori, que significa "práctica libre", se practica libremente. 
+      <h1 class="titulo">Kata</h1>
+      <p class="descripcion">
+        Hay dos formas principales de practicar Judo: Kata y Randori. Kata, que
+        literalmente significa "forma", se practica siguiendo un sistema formal
+        de ejercicio preestablecido, mientras que Randori, que significa
+        "práctica libre", se practica libremente.
         <br />
-        A través de la práctica de Kata, los alumnos aprenden los principios de las técnicas. 
-        <br />Tomado de: <a href="http://kodokanjudoinstitute.org/en/waza/forms/">La pagina del Kodokan</a> Puedes dar click sobre cada Kata para ver su video</p>
-        
-            
-        <div id="video-player__container">
-            <iframe id="video-player"  src="" allowfullscreen></iframe>
-            <button onclick="closeVideo()">Cerrar</button>
-        </div>
+        A través de la práctica de Kata, los alumnos aprenden los principios de
+        las técnicas.
+        <br />Tomado de:
+        <a href="http://kodokanjudoinstitute.org/en/waza/forms/"
+          >La pagina del Kodokan</a
+        >
+        Puedes dar click sobre cada Kata para ver su video
+      </p>
 
-        <div class="kata">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPjR2_zeURCvArd7yuPvaWePELkkYi7bVAIUL516xOac6RfUHSdFxJMm9a_Mhwgu7Nk5s&usqp=CAU" 
-                alt="imagen kata" 
-                class="kata__img"
-            />
-            <p class="waza">Aprende de la Katas del Kodokan dando click <a href="./kataText.html">AQUI</a></p>
+      <div id="video-player__container">
+        <iframe id="video-player" src="" allowfullscreen></iframe>
+        <button onclick="closeVideo()">Cerrar</button>
+      </div>
 
-        </div> 
+      <div class="kata">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPjR2_zeURCvArd7yuPvaWePELkkYi7bVAIUL516xOac6RfUHSdFxJMm9a_Mhwgu7Nk5s&usqp=CAU"
+          alt="imagen kata"
+          class="kata__img"
+        />
+        <p class="waza">
+          Aprende de la Katas del Kodokan dando click
+          <a href="./kataText.html">AQUI</a>
+        </p>
+      </div>
 
-            <div class="kata">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTIkESgQYKt7NCFrlIUBCLNXU3GuXmtlye4w&usqp=CAU" 
-                    onclick='playVideo("https://www.youtube.com/embed/0towFjlKKr0")'
-                    alt="imagen kata" 
-                    class="kata__img"
-                />
-                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/0towFjlKKr0")'>Nage-no-Kata</p>
-                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/0towFjlKKr0")'>(Formas de lanzamiento)</p>
-            </div> 
-            
-            <div class="kata">
-                <img src="https://judo-iwa.nl/wp-content/uploads/2021/01/01.jpg" 
-                    onclick='playVideo("https://www.youtube.com/embed/t3DbvfVgT0w")'
-                    alt="imagen kata" 
-                    class="kata__img"
-                />
-                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/t3DbvfVgT0w")'>Katame-no-Kata</p>
-                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/t3DbvfVgT0w")'>(Formas de agarre y control)</p>
-            </div> 
-            
-            <div class="kata">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOveOCvtM8-MRseySace17IvU8Q6wDPDDDar-VSuqZN0wg504wA70s_a89XT4D2gxrGPg&usqp=CAU"
-                    onclick='playVideo("https://www.youtube.com/embed/DTkuajCCxsA")'
-                    alt="imagen kata" 
-                    class="kata__img"
-                />
-                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/DTkuajCCxsA")'>Kime-no-Kata</p>
-                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/DTkuajCCxsA")'>(Formas de técnicas decisivas)</p>
-            </div> 
-            
-            <div class="kata">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtzxhBk7MeQeSOf6w_eXS5JgN1xEWSFslgwlNJYPSyhfAqLj-Q9DQhx9TOleaJ88a2DOo&usqp=CAU"
-                    onclick='playVideo("https://www.youtube.com/embed/yGdJKwkFs1A")'
-                    alt="imagen kata" 
-                    class="kata__img"
-                />
-                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/yGdJKwkFs1A")'>Ju-no-Kata</p>
-                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/yGdJKwkFs1A")'>(Formas de gentileza y suavidad)</p>
-            </div> 
-            
-            <div class="kata">
-                <img src="https://i1.wp.com/judostuffandpics.com/wp-content/uploads/2017/08/Kodokan-Goshin-Jutsu.jpg?fit=581%2C450&ssl=1"
-                    onclick='playVideo("https://www.youtube.com/embed/R4eqsZr6JAk")'
-                    alt="imagen kata" 
-                    class="kata__img"
-                />
-                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/R4eqsZr6JAk")'>Kodokan Goshin-jutsu</p>
-                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/R4eqsZr6JAk")'>(Formas de defensa personal del Kodokan)</p>
-            </div> 
+      <div class="kata">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTIkESgQYKt7NCFrlIUBCLNXU3GuXmtlye4w&usqp=CAU"
+          onclick='playVideo("https://www.youtube.com/embed/0towFjlKKr0")'
+          alt="imagen kata"
+          class="kata__img"
+        />
+        <p
+          class="waza"
+          onclick='playVideo("https://www.youtube.com/embed/0towFjlKKr0")'
+        >
+          Nage-no-Kata
+        </p>
+        <p
+          class="waza"
+          onclick='playVideo("https://www.youtube.com/embed/0towFjlKKr0")'
+        >
+          (Formas de lanzamiento)
+        </p>
+      </div>
 
-            <div class="kata">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeYY7RkfIdKSFtEbPjQ5mF5FxCY7fm7DhTyrZ3dU_YPUMmVRh5qU0nEyg-P8HXdYhx_H8&usqp=CAU"
-                    onclick='playVideo("https://www.youtube.com/embed/Kni91-FC2io")'
-                    alt="imagen kata" 
-                    class="kata__img"
-                />
-                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/Kni91-FC2io")'>Itsusu-no-Kata</p>
-                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/Kni91-FC2io")'>(Formas de "cinco")</p>
-            </div>
+      <div class="kata">
+        <img
+          src="https://judo-iwa.nl/wp-content/uploads/2021/01/01.jpg"
+          onclick='playVideo("https://www.youtube.com/embed/t3DbvfVgT0w")'
+          alt="imagen kata"
+          class="kata__img"
+        />
+        <p
+          class="waza"
+          onclick='playVideo("https://www.youtube.com/embed/t3DbvfVgT0w")'
+        >
+          Katame-no-Kata
+        </p>
+        <p
+          class="waza"
+          onclick='playVideo("https://www.youtube.com/embed/t3DbvfVgT0w")'
+        >
+          (Formas de agarre y control)
+        </p>
+      </div>
 
-            <div class="kata">
-                <img src="http://www.admaristas-judo.com/web/img/seccion/2016810105828_hyf0SOE..jpg"
-                    onclick='playVideo("https://www.youtube.com/embed/8OFQezNC0HA")'
-                    alt="imagen kata" 
-                    class="kata__img"
-                />
-                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/8OFQezNC0HA")'>Koshiki-no-Kata</p>
-                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/8OFQezNC0HA")'>(Formas clasicas)</p>
-            </div>
+      <div class="kata">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOveOCvtM8-MRseySace17IvU8Q6wDPDDDar-VSuqZN0wg504wA70s_a89XT4D2gxrGPg&usqp=CAU"
+          onclick='playVideo("https://www.youtube.com/embed/DTkuajCCxsA")'
+          alt="imagen kata"
+          class="kata__img"
+        />
+        <p
+          class="waza"
+          onclick='playVideo("https://www.youtube.com/embed/DTkuajCCxsA")'
+        >
+          Kime-no-Kata
+        </p>
+        <p
+          class="waza"
+          onclick='playVideo("https://www.youtube.com/embed/DTkuajCCxsA")'
+        >
+          (Formas de técnicas decisivas)
+        </p>
+      </div>
 
-            <div class="kata">
-                <img src="https://res.cloudinary.com/duu3v9gfg/image/fetch/t_w_640_auto/https://78884ca60822a34fb0e6-082b8fd5551e97bc65e327988b444396.ssl.cf3.rackcdn.com/up/2019/08/kids4-1567136964-1567136964.jpg"
-                    onclick='playVideo("https://www.youtube.com/embed/FhwV1BjPYJQ")'
-                    alt="imagen kata" 
-                    class="kata__img"
-                />
-                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/FhwV1BjPYJQ")'>Kodomo-no-Kata</p>
-                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/FhwV1BjPYJQ")'>(Formas de los niños)</p>
-            </div>
+      <div class="kata">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtzxhBk7MeQeSOf6w_eXS5JgN1xEWSFslgwlNJYPSyhfAqLj-Q9DQhx9TOleaJ88a2DOo&usqp=CAU"
+          onclick='playVideo("https://www.youtube.com/embed/yGdJKwkFs1A")'
+          alt="imagen kata"
+          class="kata__img"
+        />
+        <p
+          class="waza"
+          onclick='playVideo("https://www.youtube.com/embed/yGdJKwkFs1A")'
+        >
+          Ju-no-Kata
+        </p>
+        <p
+          class="waza"
+          onclick='playVideo("https://www.youtube.com/embed/yGdJKwkFs1A")'
+        >
+          (Formas de gentileza y suavidad)
+        </p>
+      </div>
 
-            <div class="kata">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWAr80h3DdbRIdJbqb8JdwmAy-8ygzBebv8g&usqp=CAU"
-                    onclick='playVideo("https://www.youtube.com/embed/uvqxiXiA9eM")'
-                    alt="imagen kata" 
-                    class="kata__img"
-                />
-                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/uvqxiXiA9eM")'>Seiroku-Zenyo-Kokumin-Taiiku</p>
-                <p class="waza" onclick='playVideo("https://www.youtube.com/embed/uvqxiXiA9eM")'>(Formas de Maxima eficiencia para la Edcucacion fisica Nacional)</p>
-            </div>
+      <div class="kata">
+        <img
+          src="https://i1.wp.com/judostuffandpics.com/wp-content/uploads/2017/08/Kodokan-Goshin-Jutsu.jpg?fit=581%2C450&ssl=1"
+          onclick='playVideo("https://www.youtube.com/embed/R4eqsZr6JAk")'
+          alt="imagen kata"
+          class="kata__img"
+        />
+        <p
+          class="waza"
+          onclick='playVideo("https://www.youtube.com/embed/R4eqsZr6JAk")'
+        >
+          Kodokan Goshin-jutsu
+        </p>
+        <p
+          class="waza"
+          onclick='playVideo("https://www.youtube.com/embed/R4eqsZr6JAk")'
+        >
+          (Formas de defensa personal del Kodokan)
+        </p>
+      </div>
 
+      <div class="kata">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeYY7RkfIdKSFtEbPjQ5mF5FxCY7fm7DhTyrZ3dU_YPUMmVRh5qU0nEyg-P8HXdYhx_H8&usqp=CAU"
+          onclick='playVideo("https://www.youtube.com/embed/Kni91-FC2io")'
+          alt="imagen kata"
+          class="kata__img"
+        />
+        <p
+          class="waza"
+          onclick='playVideo("https://www.youtube.com/embed/Kni91-FC2io")'
+        >
+          Itsusu-no-Kata
+        </p>
+        <p
+          class="waza"
+          onclick='playVideo("https://www.youtube.com/embed/Kni91-FC2io")'
+        >
+          (Formas de "cinco")
+        </p>
+      </div>
 
+      <div class="kata">
+        <img
+          src="http://www.admaristas-judo.com/web/img/seccion/2016810105828_hyf0SOE..jpg"
+          onclick='playVideo("https://www.youtube.com/embed/8OFQezNC0HA")'
+          alt="imagen kata"
+          class="kata__img"
+        />
+        <p
+          class="waza"
+          onclick='playVideo("https://www.youtube.com/embed/8OFQezNC0HA")'
+        >
+          Koshiki-no-Kata
+        </p>
+        <p
+          class="waza"
+          onclick='playVideo("https://www.youtube.com/embed/8OFQezNC0HA")'
+        >
+          (Formas clasicas)
+        </p>
+      </div>
+
+      <div class="kata">
+        <img
+          src="https://res.cloudinary.com/duu3v9gfg/image/fetch/t_w_640_auto/https://78884ca60822a34fb0e6-082b8fd5551e97bc65e327988b444396.ssl.cf3.rackcdn.com/up/2019/08/kids4-1567136964-1567136964.jpg"
+          onclick='playVideo("https://www.youtube.com/embed/FhwV1BjPYJQ")'
+          alt="imagen kata"
+          class="kata__img"
+        />
+        <p
+          class="waza"
+          onclick='playVideo("https://www.youtube.com/embed/FhwV1BjPYJQ")'
+        >
+          Kodomo-no-Kata
+        </p>
+        <p
+          class="waza"
+          onclick='playVideo("https://www.youtube.com/embed/FhwV1BjPYJQ")'
+        >
+          (Formas de los niños)
+        </p>
+      </div>
+
+      <div class="kata">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWAr80h3DdbRIdJbqb8JdwmAy-8ygzBebv8g&usqp=CAU"
+          onclick='playVideo("https://www.youtube.com/embed/uvqxiXiA9eM")'
+          alt="imagen kata"
+          class="kata__img"
+        />
+        <p
+          class="waza"
+          onclick='playVideo("https://www.youtube.com/embed/uvqxiXiA9eM")'
+        >
+          Seiroku-Zenyo-Kokumin-Taiiku
+        </p>
+        <p
+          class="waza"
+          onclick='playVideo("https://www.youtube.com/embed/uvqxiXiA9eM")'
+        >
+          (Formas de Maxima eficiencia para la Edcucacion fisica Nacional)
+        </p>
+      </div>
     </main>
-    <a href="https://icons8.com/icon/85154/instagram" target="_blank">Imagenes del Kodokan</a>
+    <a href="https://icons8.com/icon/85154/instagram" target="_blank"
+      >Imagenes del Kodokan</a
+    >
     <footer class="footer">
-            
-        <a href="https://www.instagram.com/heikeganijudo/?hl=es-la" target="_blank"><img src="https://img.icons8.com/material-outlined/96/ffffff/instagram-new--v1.png" />Conoce el club</a>
-        <a href="https://icons8.com/icon/85154/instagram" target="_blank">Instagram icon by Icons8</a>
-        
+      <a
+        href="https://www.instagram.com/heikeganijudo/?hl=es-la"
+        target="_blank"
+        ><img
+          src="https://img.icons8.com/material-outlined/96/ffffff/instagram-new--v1.png"
+        />Conoce el club</a
+      >
+      <a href="https://icons8.com/icon/85154/instagram" target="_blank"
+        >Instagram icon by Icons8</a
+      >
     </footer>
     <script>
-        function playVideo(enlace){
-            //alert(enlace);
-            var player = document.getElementById("video-player")
-            var container = document.getElementById("video-player__container");
-            player.src = enlace;
-            //player.playVideo();
-            container.style.display =  'block';
-            window.scrollTo(0, 200);
-        }
+      function playVideo(enlace) {
+        //alert(enlace);
+        var player = document.getElementById("video-player");
+        var container = document.getElementById("video-player__container");
+        player.src = enlace;
+        //player.playVideo();
+        container.style.display = "block";
+        window.scrollTo(0, 200);
+      }
 
-        function closeVideo(){
-            var container = document.getElementById("video-player__container");
-            document.getElementById("video-player").src =  "";
-            container.style.display =  'none';
-        }
+      function closeVideo() {
+        var container = document.getElementById("video-player__container");
+        document.getElementById("video-player").src = "";
+        container.style.display = "none";
+      }
     </script>
-</body>
-
+  </body>
 </html>
